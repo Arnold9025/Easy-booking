@@ -1,0 +1,596 @@
+/* Masquer le texte des liens par défaut */
+.nav-link-text {
+    display: none;
+}
+
+/* Style for the banner image */
+.navbar .nav-link-icon .fa {
+    color: white;
+}
+
+.bodyProfil {
+    display: flex;
+    flex-direction: column;
+    /* Aligner les éléments verticalement */
+    box-sizing: border-box;
+    margin: 20px;
+    background-image: url('../img/profilClient4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.contentWrapper {
+    display: flex;
+    height: 500px;
+    /* Utilisez flex pour les éléments à l'intérieur de bodyProfil */
+}
+
+.profil {
+    flex: 1;
+}
+
+.clientInfoForm {
+    flex: 2;
+    margin-right: 20px;
+
+}
+
+.mx-auto {
+    width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .contentWrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .profil, .clientInfoForm {
+        flex: 1;
+        margin-right: 0;
+    }
+}
+
+.banner {
+    background-color: #0d0c22;
+}
+
+.banner-image {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    position: absolute;
+    /* Position the image absolutely within the container */
+    z-index: -1;
+    /* Set a lower z-index so it appears below the Navbar */
+}
+
+/* Adjust the Navbar styles */
+.transparent-navbar {
+    background-color: transparent !important;
+    z-index: 1;
+    /* Set a higher z-index so it appears above the banner image */
+}
+
+/* Afficher le texte au survol */
+.nav-link-icon:hover .nav-link-text {
+    display: inline;
+}
+
+.navContainer {
+    justify-content: space-between;
+}
+
+.transparent-navbar {
+    background-color: transparent !important;
+}
+
+/* SearchBar */
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer horizontalement */
+    justify-content: center;
+    /* Centrer verticalement */
+    text-align: center;
+    position: relative;
+    max-width: 190px;
+}
+
+.input {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #D9E8D8;
+    color: #0d0c22;
+    box-shadow: 0 0 5px #C1D9BF, 0 0 0 10px #f5f5f5eb;
+    transition: .3s ease;
+}
+
+.input::placeholder {
+    color: #777;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #777;
+    width: 1rem;
+    height: 1rem;
+
+}
+
+/*********css cartes******************/
+.offer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    color: white;
+    width: 35%;
+    /* Ajustez la largeur pour permettre deux cartes par ligne */
+    margin: 10px;
+    height: 150px;
+    font-size: 0.9em;
+    font-weight: 900;
+}
+
+/* Ajout d'une marge droite pour séparer les cartes */
+.offer:not(:nth-child(2n)) {
+    margin-left: 100px;
+    margin-right: 110px;
+}
+
+.offer-image {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.offer-description {
+    flex: 2;
+    padding: 0;
+    margin-left: 40px;
+    width: 75%;
+    overflow: hidden;
+    height: 110px;
+}
+
+.pub {
+    font-weight: 500;
+}
+
+.desc {
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+button.btn-primary {
+    flex: 1;
+    background-color: #23292f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/********css caroussel*******************/
+.slide {
+    width: 100%;
+    height: auto;
+    animation: glisse 10s infinite;
+
+}
+
+.slides {
+    display: flex;
+    width: 3000px;
+}
+
+.slide img {
+    height: 500px;
+    width: 1000px;
+}
+
+.sliderContainer {
+    width: 1000px;
+    overflow: hidden;
+    margin-left: 5%;
+    border-radius: 2%;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(-100%);
+    }
+
+    60% {
+        transform: translateX(-100%);
+    }
+
+    80% {
+        transform: translateX(-200%);
+    }
+
+    90% {
+        transform: translateX(-200%);
+    }
+
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/**************************/
+.container-fluid {
+    width: 100%;
+}
+
+.img-radius {
+    border-radius: 5px;
+}
+
+h6 {
+    font-size: large;
+}
+
+label, .f-w-600 {
+    font-weight: 600;
+    color: black;
+}
+
+#languageSelect {
+    margin-left: 335px;
+    margin-top: 5px;
+}
+
+.login-block .auth-box {
+    margin: 20px auto 0;
+    max-width: 569px !important;
+}
+
+.contact-us {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.respond {
+    font-size: 15px !important;
+    font-weight: 200;
+    margin-top: -6px;
+}
+
+.card .card-block {
+    padding: 1.25rem;
+}
+
+.f-56 {
+    font-size: 56px;
+}
+
+.form-group {
+    margin-bottom: 1.25em;
+}
+
+.btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.btn {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 19px;
+    cursor: pointer;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.profil {
+    width: 25%;
+    border-right: 1px solid #ccc;
+    /* Ligne verticale grise à droite de la section profil */
+    padding-right: 20px;
+    /* Espacement à droite de la ligne */
+}
+
+.coteDroit {
+    width: 60%;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-block {
+    border-left: 1px solid #ccc;
+    /* Ligne verticale grise à gauche de la section login-block */
+    padding-left: 20px;
+    /* Espacement à gauche de la ligne */
+}
+
+.card-block {
+    width: 100%;
+}
+
+.row2 {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    /* Alignement en haut */
+}
+
+.row2 p, .row2 h6 {
+    font-weight: 600;
+    font-size: large;
+    margin: 0;
+}
+
+.row2 h6 {
+    margin-left: 350px;
+}
+
+.row2 p, div label {
+    font-weight: 600;
+    font-size: large;
+}
+
+#newPassword {
+    margin-left: 200px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.mdp {
+    margin-top: 25px;
+}
+
+.contact-us-section {
+    float: right;
+    width: 70%;
+    /* Ajustez la largeur selon vos besoins */
+    margin-top: 50px;
+    /* Ajoutez de la marge en haut si nécessaire */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cote-gauche {
+    width: 155%;
+    margin-top: 5%;
+
+}
+
+@media (max-width: 768px) {
+    .contact-us-section {
+        float: none;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.row {
+    width: 100%;
+    margin-top: 15px;
+    /* background-image: url('https://e0.pxfuel.com/wallpapers/136/863/desktop-wallpaper-world-map-travel-world-map.jpg'); */
+}
+
+.designTitle {
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 1000px;
+}
+
+.designTitle p {
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-size: 430%;
+    margin-left: 40px;
+    color: black;
+}
+
+.designTitle p+p {
+    margin-left: 280px;
+    color: black;
+}
+
+.designTitle p+p+p {
+    margin-left: 500px;
+}
+
+h6 {
+    margin-left: 800px;
+    color: black;
+}
+
+.containerAccueil {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    /* background-image: url('https://e0.pxfuel.com/wallpapers/136/863/desktop-wallpaper-world-map-travel-world-map.jpg');
+    background-size: cover;
+    background-repeat: repeat; */
+}
+
+.fh {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.flights,
+.hotels {
+    width: 48%;
+    /* Pour créer un espace entre les deux divs */
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.flights img,
+.hotels img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.flights h2,
+.hotels h2,
+.flights p,
+.hotels p,
+.flights button,
+.hotels button {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+/* Style spécifique pour les divs flights et hotels */
+.flights {
+    background-image: url('https://wallpapers.com/images/hd/flight-zgveis6o1hmvkhcy.jpg');
+}
+
+.hotels {
+    background-image: url('https://media.istockphoto.com/id/472899538/photo/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab.jpg?s=612x612&w=0&k=20&c=rz-WSe_6gKfkID6EL9yxCdN_UIMkXUBsr67884j-X9o=');
+}
+
+.flights button, .hotels button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    width: 150px;
+}
+
+.Fit {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+.hotel {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles spécifiques pour chaque .hotel */
+.hotel1 {
+    background-image: url('https://images.unsplash.com/photo-1526495124232-a04e1849168c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHViYWklMjBjaXR5fGVufDB8fDB8fHww&w=1000&q=80');
+    border-radius: 20px;
+}
+
+.hotel2 {
+    background-image: url('https://i.pinimg.com/736x/25/0f/c5/250fc5059aebac967c6b2f2e4810b272.jpg');
+    border-radius: 20px;
+
+}
+
+.hotel3 {
+    background-image: url('https://www.genkin.org/gallery/australia/sydney/city/au-sydney-0029.jpg');
+    border-radius: 20px;
+
+}
+
+.hotel4 {
+    background-image: url('https://www.euractiv.fr/wp-content/uploads/sites/3/2016/01/gherkin_city_of_london.jpeg');
+    border-radius: 20px;
+
+}
+
+/* Styles communs pour tous les .hotel */
+.hotel1 h2, .hotel1 p, .hotel2 h2, .hotel2 p, .hotel3 h2, .hotel3 p, .hotel4 h2, .hotel4 p {
+    font-weight: 300;
+    color: white;
+    margin-top: 80px;
+}
+
+.hotel1 button, .hotel2 button, .hotel3 button, .hotel4 button {
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.hotel1, .hotel2, .hotel3, .hotel4 {
+    margin-right: 50px;
+    width: 300px;
+    text-align: center;
+    height: 300px;
+}
+
+.fh+p, .fh+p+h2 {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.fh+p+h2 {
+    border-bottom: 1px solid black;
+    margin-top: 50px;
+}
+
+.fh+p {
+    margin-top: 60px;
+}
+
+h4 {
+    font-weight: 800;
+    margin-left: 15%;
+}

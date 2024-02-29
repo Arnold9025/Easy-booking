@@ -1,0 +1,255 @@
+.lgn_bckg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('../images/bckg_Login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-container {
+    width: 750px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.form-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.inputForm {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.create-account-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #218838;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.form-image {
+    width: 300px;
+    height: 360px;
+    margin-right: 20px;
+}
+
+/**/
+
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    max-width: 370px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+}
+
+.input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #4F46E5;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.signup-link a {
+    text-decoration: underline;
+}
+
+/* CSS oublie mot de passe
+/* Ajoutez ces styles CSS à votre fichier style.css */
+
+/* Classe pour le bouton "Mot de passe oublié" */
+.forgot-password-link {
+    color: rgb(51, 51, 70);
+    /* Couleur du lien */
+    cursor: pointer;
+    /* Curseur de la main pour indiquer qu'il s'agit d'un lien cliquable */
+    text-decoration: underline;
+    /* Souligner le texte */
+    margin-top: 10px;
+    /* Marge pour l'espacement */
+}
+
+/* Classe pour le bouton "Retour à la connexion" */
+.back-to-login {
+    color: rgb(51, 51, 70);
+    /* Couleur du lien */
+    cursor: pointer;
+    /* Curseur de la main pour indiquer qu'il s'agit d'un lien cliquable */
+    text-decoration: underline;
+    /* Souligner le texte */
+    margin-bottom: 10px;
+    /* Marge pour l'espacement */
+}
+
+/* Styles supplémentaires pour les formulaires et les messages d'erreur */
+.form-title {
+    font-size: 20px;
+    /* Taille de la police pour le titre du formulaire */
+    margin-bottom: 20px;
+    /* Marge inférieure pour l'espacement */
+}
+
+.input-container {
+    margin-bottom: 15px;
+    /* Marge inférieure pour l'espacement entre les champs de saisie */
+}
+
+.inputForm {
+    width: 100%;
+    /* Largeur des champs de saisie */
+    padding: 10px;
+    /* Espacement interne des champs de saisie */
+    border: 1px solid #ccc;
+    /* Bordure des champs de saisie */
+    border-radius: 5px;
+    /* Coins arrondis pour un aspect esthétique */
+}
+
+.submit {
+    background-color: blue;
+    /* Couleur de fond du bouton de soumission */
+    color: white;
+    /* Couleur du texte du bouton de soumission */
+    padding: 10px 20px;
+    /* Espacement interne du bouton de soumission */
+    border: none;
+    /* Suppression de la bordure */
+    border-radius: 5px;
+    /* Coins arrondis pour un aspect esthétique */
+    cursor: pointer;
+    /* Curseur de la main pour indiquer qu'il s'agit d'un bouton cliquable */
+}
+
+.signup-link-button {
+    color: rgb(87, 87, 100);
+    /* Couleur du lien */
+    cursor: pointer;
+    /* Curseur de la main pour indiquer qu'il s'agit d'un lien cliquable */
+    text-decoration: underline;
+    /* Souligner le texte */
+}
+
+.error-message {
+    color: red;
+    /* Couleur du texte d'erreur */
+    margin-top: 10px;
+    /* Marge supérieure pour l'espacement */
+}
+
+/* renitailise mot de passe */
+
+.back-to-login {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-to-login:hover {
+    background-color: #999;
+}
+
+.reset-password-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}

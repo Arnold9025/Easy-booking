@@ -1,0 +1,119 @@
+/* HomePage.css */
+
+/* Barre de navigation */
+.navbar {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Zone de recherche */
+.search-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Champ de texte */
+.form-control {
+    border-radius: 3px;
+    padding: 15px !important;
+}
+
+.floating-alert {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 1000 !important;
+}
+
+#frameRange {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+/* Customize the appearance of the range thumb (slider handle) */
+#frameRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#frameRange::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #3498db;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Bouton Rechercher */
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+}
+
+/* Carte de résultat */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Bouton Réserver */
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.table-hover.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Alternating row color */
+}
+
+.table-hover.table-striped tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Hover effect */
+}
+
+.table-hover.table-striped th,
+.table-hover.table-striped td {
+    padding: 12px 8px;
+    /* More padding */
+    border: 1px solid #e9ecef;
+    /* Borders for table cells */
+}
+
+.table-hover.table-striped thead th {
+    background-color: #f8f9fa;
+    /* Header background */
+    font-weight: 500;
+    /* Bold font for header */
+}

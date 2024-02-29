@@ -1,0 +1,28 @@
+.horizontal-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.card-img-container {
+    flex: 0 0 auto;
+    /* Ne laissez pas l'image se redimensionner */
+    width: 50px;
+    /* ou la taille souhaitée */
+    height: 50px;
+    /* ou la taille souhaitée */
+    overflow: hidden;
+    /* si vous voulez que l'image soit circulaire */
+    margin-right: 15px;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body-container {
+    flex: 1;
+}

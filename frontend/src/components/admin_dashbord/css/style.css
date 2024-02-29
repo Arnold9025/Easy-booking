@@ -1,0 +1,186 @@
+/* Styles pour le formulaire de création d'un nouvel utilisateur */
+.container-parent {
+    background-image: url('../../../images/bckg_Login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.form-containere {
+    background: linear-gradient(to bottom, #fff, #ccc);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.form-title {
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-button {
+    margin-top: 20px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.recent-bookings {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour le titre "Réservations récentes" */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styles pour la table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Styles pour les en-têtes de colonne */
+.table th {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Styles pour les cellules de la table */
+.table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Styles pour la colonne "Status" */
+.status {
+    text-align: center;
+}
+
+/* Styles pour la colonne "Action" */
+.action {
+    text-align: center;
+}
+
+/* Styles pour les icônes d'état */
+.action .MuiSvgIcon-root {
+    font-size: 20px;
+    color: #007bff;
+}
+
+/* Styles pour l'icône "En attente" */
+.status .MuiSvgIcon-root.warning {
+    color: #ffc107;
+}
+
+/* Styles pour l'icône "Annulée" */
+.status .MuiSvgIcon-root.error {
+    color: #dc3545;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le conteneur de la table */
+.table-container {
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: -50px;
+}
+
+/* Style pour la table */
+.tablee {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style pour les en-têtes de colonne */
+.table-header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Style pour les cellules de la table */
+.table-cell {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Style pour les icônes d'état */
+.icon-button {
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* Style pour l'icône "Vérifié" */
+.icone {
+    color: #007bff;
+    /* Bleu */
+}
+
+/* Style pour l'icône "Non vérifié" */
+.iconee {
+    color: #dc3545;
+    /* Rouge */
+}
+
+/* Style pour le bouton "Vérifier" */
+.verify-button {
+    background-color: #007bff;
+    /* Vert */
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.verify-button:hover {
+    background-color: #0051a8;
+    /* Vert plus foncé au survol */
+}
